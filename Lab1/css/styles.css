@@ -4,11 +4,9 @@
     }
     
     header, nav, footer, #content{
-        
-        width: 960px;
+        width: 1000px;
         margin: 0 auto;
         text-align: center;
-        
     }
     
     h1{
@@ -43,8 +41,8 @@
         border-radius: 40px;
     }
             
-    #me, #welcomeText{
-        float:left;
+    #me, #welcomeText {
+        float: left;
         width: 40%;
     } 
             
