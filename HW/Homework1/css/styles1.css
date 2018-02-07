@@ -19,6 +19,9 @@
         margin-bottom: 0px;
         
     }
+    hr{
+        width:950px;
+    }
     shadow{
         display:block;
         position:relative;
