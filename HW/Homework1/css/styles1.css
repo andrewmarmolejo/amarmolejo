@@ -87,7 +87,7 @@
         font-size: 1.4em; 
         transition: .9s; /* transition effect*/
     }
-    #infoText{
+    #infoText, #infoText1, #infoText2{
         float: left;
         width: 250px;
         text-align: left;
