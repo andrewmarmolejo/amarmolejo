@@ -1,0 +1,92 @@
+[05-Feb-2018 23:06:16 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:06:16 UTC] PHP Stack trace:
+[05-Feb-2018 23:06:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:06:22 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:06:22 UTC] PHP Stack trace:
+[05-Feb-2018 23:06:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:14:49 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:14:49 UTC] PHP Stack trace:
+[05-Feb-2018 23:14:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:14:49 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:14:49 UTC] PHP Stack trace:
+[05-Feb-2018 23:14:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:14:50 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:14:50 UTC] PHP Stack trace:
+[05-Feb-2018 23:14:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:14:51 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:14:51 UTC] PHP Stack trace:
+[05-Feb-2018 23:14:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:14:51 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:14:51 UTC] PHP Stack trace:
+[05-Feb-2018 23:14:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:14:51 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:14:51 UTC] PHP Stack trace:
+[05-Feb-2018 23:14:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:14:51 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:14:51 UTC] PHP Stack trace:
+[05-Feb-2018 23:14:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:14:51 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:14:51 UTC] PHP Stack trace:
+[05-Feb-2018 23:14:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:15:05 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:15:05 UTC] PHP Stack trace:
+[05-Feb-2018 23:15:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:15:08 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:15:08 UTC] PHP Stack trace:
+[05-Feb-2018 23:15:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:15:28 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:15:28 UTC] PHP Stack trace:
+[05-Feb-2018 23:15:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:15:28 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:15:28 UTC] PHP Stack trace:
+[05-Feb-2018 23:15:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:16:00 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:16:00 UTC] PHP Stack trace:
+[05-Feb-2018 23:16:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:16:01 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:16:01 UTC] PHP Stack trace:
+[05-Feb-2018 23:16:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:16:01 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:16:01 UTC] PHP Stack trace:
+[05-Feb-2018 23:16:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:16:01 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:16:01 UTC] PHP Stack trace:
+[05-Feb-2018 23:16:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:16:01 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:16:01 UTC] PHP Stack trace:
+[05-Feb-2018 23:16:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:16:01 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:16:01 UTC] PHP Stack trace:
+[05-Feb-2018 23:16:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:16:02 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:16:02 UTC] PHP Stack trace:
+[05-Feb-2018 23:16:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:16:02 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:16:02 UTC] PHP Stack trace:
+[05-Feb-2018 23:16:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:18:05 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:18:06 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 12
+[05-Feb-2018 23:46:27 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 9
+[05-Feb-2018 23:46:27 UTC] PHP Stack trace:
+[05-Feb-2018 23:46:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:46:27 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 9
+[05-Feb-2018 23:46:27 UTC] PHP Stack trace:
+[05-Feb-2018 23:46:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:46:28 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 9
+[05-Feb-2018 23:46:28 UTC] PHP Stack trace:
+[05-Feb-2018 23:46:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:46:28 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 9
+[05-Feb-2018 23:46:28 UTC] PHP Stack trace:
+[05-Feb-2018 23:46:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:46:43 UTC] PHP Warning:  include(Lab2/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 9
+[05-Feb-2018 23:46:43 UTC] PHP Stack trace:
+[05-Feb-2018 23:46:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:46:43 UTC] PHP Warning:  include(): Failed opening 'Lab2/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 9
+[05-Feb-2018 23:46:43 UTC] PHP Stack trace:
+[05-Feb-2018 23:46:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:46:44 UTC] PHP Warning:  include(Lab2/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 9
+[05-Feb-2018 23:46:44 UTC] PHP Stack trace:
+[05-Feb-2018 23:46:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
+[05-Feb-2018 23:46:44 UTC] PHP Warning:  include(): Failed opening 'Lab2/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php on line 9
+[05-Feb-2018 23:46:44 UTC] PHP Stack trace:
+[05-Feb-2018 23:46:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/amarmolejo/Labs/Lab2/index.php:0
