@@ -3,15 +3,25 @@
     <head>
         <title> 777 Slot Machine </title>
         <meta charset="utf-8" />
+        <style>
+            @import url(css/styles.css);
+        </style>
     </head>
     <body>
-        <?php
-            include 'inc/functions.php'; 
-            for($i=1; $i<4; $i++){
-                ${"randomValue" . $i } = rand(0,2);
-                displaySymbol(${"randomValue" . $i} );
-            }
-            displayPoints($randomValue1, $randomValue2, $randomValue3);   
-        ?>
+        <main id="main">
+            <?php
+                include 'inc/functions.php';    // INCLUDES THE FUNCTION.PHP
+                play();                         // FUNCTION TO PLAY
+            ?>
+            <form>
+                <input type="submit" value="Spin!" />
+            </form>
+        </main>
+        
+        <div id="verified">
+           <?php
+                echo "<img id='verified' src='img/ver.png' alt='badge' />";
+           ?>
+        </div>
     </body>
 </html>
