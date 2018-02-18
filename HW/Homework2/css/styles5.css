@@ -1,0 +1,139 @@
+  @import url('http://use.edgefonts.net/nosifer.js');
+  
+  body {
+      background-image: url(../img/BGGloomy.jpg);
+      /*background-image: url("<?php echo $bg; ?>");*/
+      /*background:black;*/
+      color:white;
+      
+   }
+   
+  #main{
+    width: 1000px;
+    background:black;
+    text-align: center;
+    height:1000;
+    margin: auto;
+    top: 90px;
+    /*background-image: url(../img/BGFridayThe13th.jpg);*/
+   }
+  #grid{
+     top: 300px;
+     margin-left: 200px;
+     position:absolute;
+   }
+  input{
+    top:30px;
+    left:70px;
+    font-size:1.3em;
+    padding: 5px 15px;
+    color:red;
+    cursor:pointer;
+    text-align: center;
+    position:absolute;
+    font-weight:bold;
+    background: black;
+    border: 0 none;
+    border-radius: 5px; 
+  }
+  #output{
+
+    font-size:1.5em;
+    padding: 5px 15px;
+    color:red;
+    text-align: center;
+    position:absolute;
+    background: black;
+    border: 0 none;
+    border-radius: 5px;
+    margin: auto;
+  }
+    
+    
+    
+    
+      /*  FIRST ROW   */
+    
+    #reel1{
+      top:250px;
+      left:-10px;
+      position:absolute;
+    }
+    #reel2{
+      top:250px;
+      left:190px;
+      position:absolute;
+    }
+    #reel3{
+      top:250px;
+      left:390px;
+      position:absolute;
+    }
+    #reel4{
+      top:250px;
+      left:590px;
+      position:absolute;
+    }
+    #reel5{
+      top:250px;
+      left:790px;
+      position:absolute;
+    }
+    
+    
+      /*  SECOND ROW   */
+    
+    #reel6{
+      top:415px;
+      left:-10px;
+      position:absolute;
+    }
+    #reel7{
+      top:415px;
+      left:190px;
+      position:absolute;
+    }
+    #reel8{
+      top:415px;
+      left:390px;
+      position:absolute;
+    }
+    #reel9{
+      top:415px;
+      left:590px;
+      position:absolute;
+    }
+    #reel10{
+      top:415px;
+      left:790px;
+      position:absolute;
+    }
+    
+    
+      /*  THIRD ROW   */
+      
+    #reel11{
+      top:580px;
+      left:-10px;
+      position:absolute;
+    }
+    #reel12{
+      top:580px;
+      left:190px;
+      position:absolute;
+    }
+    #reel13{
+      top:580px;
+      left:390px;
+      position:absolute;
+    }
+    #reel14{
+      top:580px;
+      left:590px;
+      position:absolute;
+    }
+    #reel15{
+      top:580px;
+      left:790px;
+      position:absolute;
+    }

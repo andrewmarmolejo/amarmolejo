@@ -10,7 +10,7 @@
     <body>
         <main id="main">
             <?php
-                include 'inc/functions.php';    // INCLUDES THE FUNCTION.PHP
+                include 'inc/functions.php';
                 play();                         // FUNCTION TO PLAY
             ?>
             <form>
@@ -18,10 +18,10 @@
             </form>
         </main>
         
-        <div id="verified">
-           <?php
-                echo "<img id='verified' src='img/ver.png' alt='badge' />";
-           ?>
-        </div>
+        <!--<div id="verified">-->
+        <!--  <?php-->
+        <!--        echo "<img src='img/ver.png' alt='badge'< />";-->
+        <!--  ?>-->
+        <!--</div>-->
     </body>
 </html>
