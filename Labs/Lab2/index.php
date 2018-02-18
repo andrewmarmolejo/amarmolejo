@@ -17,11 +17,5 @@
                 <input type="submit" value="Spin!" />
             </form>
         </main>
-        
-        <!--<div id="verified">-->
-        <!--  <?php-->
-        <!--        echo "<img src='img/ver.png' alt='badge'< />";-->
-        <!--  ?>-->
-        <!--</div>-->
     </body>
 </html>
