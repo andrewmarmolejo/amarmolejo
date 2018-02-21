@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Horror Movie Night</title>
+        <title>Homework #2</title>
         <meta charset="utf-8" />
         <style>
             @import url(css/styles5.css); 

@@ -1,16 +1,17 @@
   @import url('http://use.edgefonts.net/nosifer.js');
   
   body {
-      background-image: url(../img/BGGloomy.jpg);
-      /*background-image: url("<?php echo $bg; ?>");*/
-      /*background:black;*/
+      background-image: url(../img/BG.jpg);
+      background-color:black;
       color:white;
+      background-size: cover;
+      background-repeat: no-repeat;
       
    }
-   
   #main{
     width: 1000px;
-    background:black;
+    background:clear;
+    color: black;
     text-align: center;
     height:1000;
     margin: auto;
@@ -21,11 +22,12 @@
      top: 300px;
      margin-left: 200px;
      position:absolute;
+     opacity: 0.4;
    }
   input{
-    top:30px;
+    top:60px;
     left:70px;
-    font-size:1.3em;
+    font-size:1.8em;
     padding: 5px 15px;
     color:red;
     cursor:pointer;
@@ -37,7 +39,6 @@
     border-radius: 5px; 
   }
   #output{
-
     font-size:1.5em;
     padding: 5px 15px;
     color:red;
@@ -48,92 +49,81 @@
     border-radius: 5px;
     margin: auto;
   }
-    
-    
-    
-    
       /*  FIRST ROW   */
-    
     #reel1{
-      top:250px;
-      left:-10px;
+      top:305px;
+      left:235px;
       position:absolute;
     }
     #reel2{
-      top:250px;
-      left:190px;
+      top:305px;
+      left:435px;
       position:absolute;
     }
     #reel3{
-      top:250px;
-      left:390px;
+      top:305px;
+      left:635px;
       position:absolute;
     }
     #reel4{
-      top:250px;
-      left:590px;
+      top:305px;
+      left:835px;
       position:absolute;
     }
     #reel5{
-      top:250px;
-      left:790px;
+      top:305px;
+      left:1035px;
       position:absolute;
     }
-    
-    
       /*  SECOND ROW   */
-    
     #reel6{
-      top:415px;
-      left:-10px;
+      top:465px;
+      left:235px;
       position:absolute;
     }
     #reel7{
-      top:415px;
-      left:190px;
+      top:465px;
+      left:435px;
       position:absolute;
     }
     #reel8{
-      top:415px;
-      left:390px;
+      top:465px;
+      left:635px;
       position:absolute;
     }
     #reel9{
-      top:415px;
-      left:590px;
+      top:465px;
+      left:835px;
       position:absolute;
     }
     #reel10{
-      top:415px;
-      left:790px;
+      top:465px;
+      left:1035px;
       position:absolute;
     }
-    
-    
       /*  THIRD ROW   */
-      
     #reel11{
-      top:580px;
-      left:-10px;
+      top:625px;
+      left:235px;
       position:absolute;
     }
     #reel12{
-      top:580px;
-      left:190px;
+      top:625px;
+      left:435px;
       position:absolute;
     }
     #reel13{
-      top:580px;
-      left:390px;
+      top:625px;
+      left:635px;
       position:absolute;
     }
     #reel14{
-      top:580px;
-      left:590px;
+      top:625px;
+      left:835px;
       position:absolute;
     }
     #reel15{
-      top:580px;
-      left:790px;
+      top:625px;
+      left:1035px;
       position:absolute;
     }
