@@ -3,31 +3,22 @@
  //print_r($_GET); //displaying all content submitted in the form using the GET method
 
   $backgroundImage = "img/sea.jpg";
-    
   if (isset($_GET['keyword'])) { //if form was submitted
-        
-      
       $orientation = "horizontal";
       $keyword = $_GET['keyword'];
       include 'api/pixabayAPI.php';
-      
       if (!empty($_GET['category'])) { //user selected a category
         $keyword = $_GET['category'];
       }
-      
-      echo "<h3>You searched for " . $keyword . "</h3>"; 
-      
+      echo "<br />";
+      echo "<div id='message2'>";
+      echo "<h3>You searched for " . $keyword . "</h3>";
+      echo "</div>";
       if (isset($_GET['layout'])) {  //user checked a layout
         $orientation = $_GET['layout'];
       }
-      
-      
-      
       $imageURLs = getImageURLs($keyword, $orientation);
-      
-      //$backgroundImage = $imageURLs[rand(0, count($imageURLs)-1];
       $backgroundImage = $imageURLs[array_rand($imageURLs)];
-      //print_r($imageURLs);
   }      
  
     function checkCategory($category){
@@ -60,12 +51,16 @@
     <body>
         <?php
             if (!isset($_GET['keyword'])) {
+              echo "<br />";
+              echo "<div id='message1'>";
               echo "<h2> You must type a keyword or select a category </h2>";
+              echo "</div>";
+              echo "<br />";
             }  
         ?>
 
         <form method="GET">
-                       
+            <br />      
             <input type="text" size="20" name="keyword" placeholder="Keyword to search for" value="<?=$_GET['keyword']?>"/>
             
             <div id = 'elementsDiv'>
@@ -81,9 +76,9 @@
                 <input type="radio" name="layout" value="vertical" id="vlayout" <?= ($_GET['layout']=="vertical")?"checked":"" ?>>
                 <label for="vlayout"> Vertical </label>
             </div>
-            <br />
+            <br /> <br />
             <select id = "category" name="category">
-              <option value="">  Select One </option> 
+              <option value="">---Select One---</option> 
               <option value="Sea"       <?=checkCategory('sea')?>>  Ocean </option>
               <option value="Forest"    <?=checkCategory('Forest')?>>  Forest </option>
               <option value="Sky"       <?=checkCategory('Sky')?>>  Sky </option>

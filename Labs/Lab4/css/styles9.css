@@ -2,7 +2,7 @@
         opacity:0.9;
         width:100%;
         text-align:center;
-        color:yellow;
+        color:black;
     }
     
     input {
@@ -10,14 +10,22 @@
         color: black;
         border-radius:20px;
     }
+
     
-    #elementsDiv {
+    #elementsDiv{
         display:inline-block; 
         color:black; 
         text-align:left; 
         background-color:white; 
         padding:10px; 
         border-radius:10px;
+    }
+    
+    #message1, #message2 {
+        display:inline-block;
+        padding:10px; 
+        border-radius:10px;
+        background: rgba(204, 204, 204, 0.7);
     }
     
     #category{
