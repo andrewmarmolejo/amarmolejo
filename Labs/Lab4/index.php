@@ -38,8 +38,8 @@
             @import url("css/styles9.css");
             body {
                 background-image: url(<?=$backgroundImage?>);
-                background-size: 100% 100%;
-                background-attachment: fixed;
+                /*background-size: 100% 100%;*/
+                /*background-attachment: fixed;*/
             }
             #carouselExampleIndicators {
                 width: 500px;

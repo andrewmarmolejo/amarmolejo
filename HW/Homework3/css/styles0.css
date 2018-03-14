@@ -1,0 +1,175 @@
+    body{
+        width:100%;
+        text-align:center;
+        color:white;
+    }
+    
+    #main{
+        color: yellow;
+        margin: auto;
+        width: 35%;
+        border: 3px solid white;
+        padding: 10px;
+        text-align: center;
+        background: rgba(0,0,0,0.7);
+        /*background: black(0.5);*/
+    }
+    #villain{
+        color: yellow;
+        margin: auto;
+        width: 25%;
+        border: 3px solid white;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        background: rgba(0,0,0,0.2);
+    }
+    
+    h1{
+        color: yellow;
+        font-family: 'Carrois Gothic SC', sans-serif;
+    }
+    h2{
+        color: yellow;
+        font-family: 'Nanum Gothic Coding', monospace;
+    }
+    h3{
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+    h4{
+        color: red;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+    h5{
+        color: red;
+    }
+    
+    .image{
+        width: 99%;
+        border-style: dotted;
+        border-color: yellow;
+    }
+    
+        /*LEFT ICON PICS*/
+    #villain1{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:20px;
+        left:10px;
+        position:absolute;
+    }
+    #villain2{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:155px;
+        left:10px;
+        position:absolute;
+    }
+    #villain3{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:290px;
+        left:10px;
+        position:absolute;
+    }
+    #villain4{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:425px;
+        left:10px;
+        position:absolute;
+    }
+    #villain5{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:560px;
+        left:10px;
+        position:absolute;
+    }
+    #villain6{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:695px;
+        left:10px;
+        position:absolute;
+    }
+    
+        /*RIGHT ICON PICS*/
+    #villain7{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:20px;
+        right:10px;
+        position:absolute;
+    }
+    #villain8{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;  
+        
+        top:155px;
+        right:10px;
+        position:absolute;
+    }
+    #villain9{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:290px;
+        right:10px;
+        position:absolute;
+    }
+    #villain10{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:425px;
+        right:10px;
+        position:absolute;
+    }
+    #villain11{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:560px;
+        right:10px;
+        position:absolute;
+    }
+    #villain12{
+        width: 140px;
+        border-radius: 100px;
+        border-style: dotted;
+        border-color: yellow;
+        
+        top:695px;
+        right:10px;
+        position:absolute;
+    }
