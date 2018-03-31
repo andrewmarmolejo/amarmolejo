@@ -124,19 +124,19 @@
         <h1> OtterMart <br/> Product Search </h1>
         
         <form>
-            Product: <input type="text" name="product" value="<?=$_GET['product']?>"/><br /><br />
+            Product: <input type="text" name="product"/><br /><br />
             Category:    
                 <select name="category">
                     <option value=""> Select One </option>
                     <?= displayCategories() ?>
                 </select>
             <br /><br />
-            Price:  From <input type="text" name="priceFrom" size="7" value="<?=$_GET['priceFrom']?>" />
-                    To   <input type="text" name="priceTo" size="7"   value="<?=$_GET['priceTo']?>" />
+            Price:  From <input type="text" name="priceFrom" size="7" />
+                    To   <input type="text" name="priceTo" size="7"   />
             <br /><br />
             Order results by:<br />
-            <input type="radio" name="orderBy" value="price" <?= ($_GET['orderBy']=="price")?"checked":""?> /> Price<br />
-            <input type="radio" name="orderBy" value="name"  <?= ($_GET['orderBy']=="name")?"checked":""?> /> Name<br />
+            <input type="radio" name="orderBy" value="price"  /> Price<br />
+            <input type="radio" name="orderBy" value="name"   /> Name<br />
             <br />
             <input type="submit" value="Search" name="searchForm" />
         </form>
