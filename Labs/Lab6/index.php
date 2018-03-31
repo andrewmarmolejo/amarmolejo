@@ -18,7 +18,8 @@
     function displaySearchResults(){
         global $conn; 
         if (isset($_GET['searchForm'])){    //  CHECKS WHETHER THE USER HAS SUBMITTED THE FORM
-            echo "<h3>Products Found: </h3>"; 
+            echo "<h3>"; 
+            echo "Products Found"; 
             
                 //  FOLLOWING SQL WORKS, BUT DOES NOT PREVENT SQL INJECTION 
                 //  $sql = "SELECT * FROM om_product WHERE 1 AND productName LIKE '%".$_GET['product']."%'"; 
@@ -30,36 +31,72 @@
             if(!empty($_GET['product'])){
                 $sql .= " AND productName LIKE :productName";
                 $namedParameters[":productName"] = "%" . $_GET['product'] . "%"; 
+                
+                echo ", for product \"" . $_GET['product'] . "\""; 
             }
             
             if(!empty($_GET['category'])){
                 $sql .= " AND catId = :categoryId";
                 $namedParameters[":categoryId"] = $_GET['category']; 
+                
+                $cat = $_GET['category']; 
+                
+                switch($cat){
+                    case 1:
+                        echo ", in category \"Electronics\""; 
+                        break;
+                    case 2:
+                        echo ", in category \"Video Games\""; 
+                        break;
+                    case 3:
+                        echo ", in category \"Sports\""; 
+                        break;
+                    case 4:
+                        echo ", in category \"Computers\""; 
+                        break;
+                    case 5:
+                        echo ", in category \"Books\""; 
+                        break;
+                    case 6:
+                        echo ", in category \"Toys\""; 
+                        break;
+                    case 7:
+                        echo ", in category \"Movies\""; 
+                        break;
+                }
             }
             
             if(!empty($_GET['priceFrom'])){
                 $sql .= " AND price >= :priceFrom";
                 $namedParameters[":priceFrom"] = $_GET['priceFrom']; 
+                
+                echo ", from price $" . $_GET['priceFrom'];
             }
             
             if (!empty($_GET['priceTo'])) { //checks whether user has typed something in the "Product" text box
                  $sql .=  " AND price <= :priceTo";
                  $namedParameters[":priceTo"] =  $_GET['priceTo'];
+                 
+                  echo ", to price $" . $_GET['priceTo'];
              }
              
              if(isset($_GET['orderBy'])){
                  
                  if($_GET['orderBy'] == "price"){
-                     $sql .= " ORDER BY price"; 
+                     $sql .= " ORDER BY price";
+                     
+                     echo ", order by price";
                  }
                  else{
-                     $sql .= " ORDER BY name"; 
+                     $sql .= " ORDER BY productName"; 
+                     
+                     echo ", order by name";
                  }
                  
              }
             
-            
-            
+            echo ": "; 
+            echo "</h3>";
             
             $stmt = $conn->prepare($sql); 
             $stmt -> execute($namedParameters); 
@@ -77,27 +114,33 @@
 <html>
     <head>
         <title> OtterMart Product Search </title>
+        <link href="css/styles34.css" rel="stylesheet" types="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
     </head>
     <body>
-        <h1> OtterMart Product Search </h1>
+    <div id="main">
+        <h1> OtterMart <br/> Product Search </h1>
+        
         <form>
-            Product: <input type = "text" name="product" /><br />
+            Product: <input type="text" name="product" value="<?=$_GET['product']?>"/><br /><br />
             Category:    
                 <select name="category">
                     <option value=""> Select One </option>
                     <?= displayCategories() ?>
                 </select>
-            <br />
-            Price:  From <input type="text" name="priceFrom" size="7"/>
-                    To   <input type="text" name="priceTo" size="7"/>
-            <br />
+            <br /><br />
+            Price:  From <input type="text" name="priceFrom" size="7" value="<?=$_GET['priceFrom']?>" />
+                    To   <input type="text" name="priceTo" size="7"   value="<?=$_GET['priceTo']?>" />
+            <br /><br />
             Order results by:<br />
-            <input type="radio" name="orderBy" value="price" /> Price<br />
-            <input type="radio" name="orderBy" value="name" /> Name<br />
+            <input type="radio" name="orderBy" value="price" <?= ($_GET['orderBy']=="price")?"checked":""?> /> Price<br />
+            <input type="radio" name="orderBy" value="name"  <?= ($_GET['orderBy']=="name")?"checked":""?> /> Name<br />
             <br />
             <input type="submit" value="Search" name="searchForm" />
         </form>
-        
+    </div>    
         <br />
         <hr>
         <?= displaySearchResults() ?>

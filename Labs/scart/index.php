@@ -1,7 +1,6 @@
 <?php
     include 'functions.php';
     session_start();
-
     if(!isset($_SESSION['cart'])){
         $_SESSION['cart'] = array();
     }
@@ -9,9 +8,6 @@
         //  GET ACCESS TO OUR API FUNCTION
         include 'wmapi.php';
         $items = getProducts($_GET['query']);
-        // print_r($items);
-        
-        
     }
     //  CHECK TO SEE IF AN ITEM HAS BEEN ADDED TO THE CART
     if(isset($_POST['itemName'])){
@@ -34,7 +30,6 @@
                     $found = true; 
                 }
             }
-    
             //  ELSE ADD IT TO THE ARRAY
             if($found != true){
                 $newItem['quantity'] = 1; 
