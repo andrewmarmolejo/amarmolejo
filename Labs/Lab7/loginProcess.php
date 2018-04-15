@@ -1,40 +1,54 @@
 <?php
 
     session_start();
-
-    //print_r($_POST);  //displays values passed in the form
-    
     include '../../dbConnection.php';
     
-    $conn = getDatabaseConnection("ottermart");
-    
+    $conn = getDatabaseConnection("heroku_43c1456b693fb28");
     $username = $_POST['username'];
     $password = sha1($_POST['password']);
     
-    //echo $password;
+    //  FOLLING SQL DOES NOT PREVENT SQL INJECTION
+    $sql = "SELECT * FROM om_admin WHERE username = '$username' AND password = '$password'";
     
-    $sql = "SELECT * 
-            FROM om_admin
-            WHERE username = '$username'
-            AND   password = '$password'";
+    //  FOLLOWING SQL PREVENTS SQL INJECTION BY AVOIDING USING SINGLE QUOTES   
+    $sql = "SELECT * FROM om_admin WHERE username = :username AND password = :password";
+            
+    $np = array(); 
+    $np[":username"] = $username; 
+    $np[":password"] = $password; 
             
     $stmt = $conn->prepare($sql);
-    $stmt->execute();
+    $stmt->execute($np);
     $record = $stmt->fetch(PDO::FETCH_ASSOC); //expecting one single record
-    
-    //print_r($record);
 
     if (empty($record)) {
-        
-        echo "Wrong username or password!";
-        
+        echo "<h1> OtterMart - Admin Login </h1>";
+        echo "<h3>Wrong username or password!</h3>";
+        echo "<form method='POST' action='loginProcess.php'>";
+            echo "Username: <input type='text' name='username'/> <br />";
+            echo "Password: <input type='password' name='password'/> <br /><br />";
+            echo "<input type='submit' name='submitForm' value='Login!' />";
+        echo "</form>";
     } else {
-        
-        
-            //echo $record['firstName'] . " " . $record['lastName'];
             $_SESSION['adminName'] = $record['firstName'] . " " . $record['lastName'];
             header("Location:admin.php");
-        
     }
 
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Log In</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+    <img id="logo" src="img/ver.png" alt="CSUMB Logo"/>
+    </body>
+</html>

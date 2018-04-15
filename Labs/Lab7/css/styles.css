@@ -1,0 +1,45 @@
+
+#main{
+        color: white;
+        margin: auto;
+        width: 30%;
+        border: 3px solid white;
+        padding: 10px;
+        text-align: left;
+        background: rgba(0,0,0,0.7);
+        /*background: black(0.5);*/
+    }
+#logo{
+        width: 140px;
+        top:20px;
+        left:10px;
+        position:absolute;
+    }
+form {
+    display: inline;
+}
+body{
+    width:100%;
+    text-align:center;
+    color:black;
+    background-color: #c4e2ff;
+    }
+h1{
+        color: black;
+        font-family: 'Carrois Gothic SC', sans-serif;
+    }
+h2{
+        color: black;
+        font-family: 'Nanum Gothic Coding', monospace;
+    }
+h3{
+        color: red;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+h4{
+        color: black;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+h5, h6{
+        color: black;
+    }
