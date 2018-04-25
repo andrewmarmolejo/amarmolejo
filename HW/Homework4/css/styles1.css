@@ -11,8 +11,8 @@
 }
 
   body {
-      background-image: url(../img/background.jpg);
-      /*background-color:black;*/
+      /*background-image: url(../img/background.jpg);*/
+      background-color:black;
       color:white;
       background-size: cover;
       background-repeat: no-repeat;
