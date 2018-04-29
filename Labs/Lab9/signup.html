@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>AJAX: Sign Up Page</title>
-
+        <link  href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script>
             function validateForm() {
@@ -12,6 +15,32 @@
         </script>
         <script>
             $(document).ready(function(){
+                $("#username").change( function(){ 
+                    //alert( $("#username").val() )
+                    $.ajax({
+                        type: "GET",
+                        url: "checkUsernameAPI.php",
+                        dataType: "json",
+                        data: { "username": $("#username").val() },
+                        success: function(data,status) {
+                             //alert(data);
+                             if (!data) {  //data == false
+                                //alert("Username is Available");
+                                $("#taken").html("<span id='avSpan'> - Username is Available</span>");
+                             } else {
+                                //alert("Username is ALREADY TAKEN");
+                                 $("#taken").html("<span id='unavSpan'> - Username is Unavailable</span>"); 
+                             }
+                             
+                        
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+
+                    });//ajax
+                    
+                });
                 $("#zipCode").change(function(){
                     //alert(  $("#zipCode").val());
                     $.ajax({
@@ -19,16 +48,20 @@
                         url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
                         dataType: "json",
                         data: { "zip": $("#zipCode").val()},
+                        
                         success: function(data,status) {
-                            //alert(data.city);
-                            $("#city").html(data.city);
-                            $("#latitude").html(data.latitude);
-                            $("#longitude").html(data.longitude);
+                            if(!data){
+                                $("#zipSpan").html("<span id='zipSpan'> - Zip code not found.</span>"); 
+                            } else{
+                                $("#zipSpan").hide();
+                                $("#city").html(data.city);
+                                $("#latitude").html(data.latitude);
+                                $("#longitude").html(data.longitude);
+                            }
                         },
                         complete: function(data,status) { //optional, used for debugging purposes
                             //alert(status);
                         }
-                        
                     });//ajax
                 }); 
                 $("#state").change(function(){
@@ -53,47 +86,53 @@
                         
                         });//ajax
                 });
-
+                $("#button").click(function(){
+                    if($("#pw2").val() != $("#pw1").val()){
+                        
+                        $("#noMatch").html("<span id='pwSpan'> - Passwords do not match.</span>");
+                    } else {
+                        $("#noMatch").html("");
+                    }
+                })
             });
-            
         </script>
     </head>
     <body>
         <h1> Sign Up Form </h1>
         <form onsubmit="return validateForm()">
-            <fieldset>
-               <legend>Sign Up</legend>
-                First Name:  <input type="text"><br> 
-                Last Name:   <input type="text"><br> 
-                Email:       <input type="text"><br> 
-                Phone Number:<input type="text"><br><br>
-                Zip Code:    <input type="text" id="zipCode"><br>
-                City:        <span id="city"></span>
-                <br>
-                Latitude:    <span id="latitude"></span>
-                <br>
-                Longitude:   <span id="longitude"></span>
-                <br><br>
-                State: 
-                <select id="state">
-                    <option value="">Select One</option>
-                    <option value="ca"> California</option>
-                    <option value="ny"> New York</option>
-                    <option value="tx"> Texas</option>
-                    <option value="va"> Virginia</option>
-                </select><br />
-                
-                Select a County: <select id="county"></select><br>
-                
-                Desired Username: <input type="text"><br>
-                
-                Password: <input type="password"><br>
-                
-                Type Password Again: <input type="password"><br>
-                
-                <input type="submit" value="Sign up!">
+            <fieldset id="fieldset1">
+                <legend id="legend1"><h2>Sign Up</h2></legend>
+                <fieldset id="fieldset2">
+                    <legend id="legend2"><h3>Personal Information</h3></legend>
+                    First Name:  <input type="text"><br> 
+                    Last Name:   <input type="text"><br> 
+                    Email:       <input id="email" type="text"><br> 
+                    Phone Number:<input type="text"><br>
+                </fieldset><br>
+                <fieldset id="fieldset3">
+                    <legend id="legend3"><h3>Location</h3></legend>
+                    Zip Code:    <input type="text" id="zipCode"><span id="zipSpan"></span><br>
+                    City:        <span id="city"></span><br>
+                    Latitude:    <span id="latitude"></span><br>
+                    Longitude:   <span id="longitude"></span><br>
+                    State: 
+                    <select id="state">
+                        <option value="">Select One</option>
+                        <option value="ca"> California</option>
+                        <option value="ny"> New York</option>
+                        <option value="tx"> Texas</option>
+                        <option value="va"> Virginia</option>
+                    </select><br />
+                    Select a County: <select id="county"></select><br>
+                </fieldset><br>
+                <fieldset id="fieldset4">
+                    <legend id="legend4"><h3>Login Information</h3></legend>
+                    Desired Username: <input id="username" type="text"><span id="taken"></span><br>
+                    Password: <input id="pw1" type="password"><br>
+                    Type Password Again: <input id="pw2" type="password"><span id="noMatch"></span><br>
+                </fieldset>
+                <br><input type="submit" id="button" class="button" value="Sign up!">
             </fieldset>
         </form>
-    
     </body>
 </html>

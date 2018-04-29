@@ -1,0 +1,101 @@
+body{
+    width:45%;
+    color:black;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+#fieldset1{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: outset;
+}
+#legend1{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#fieldset2{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: dotted;
+}
+#legend2{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#fieldset3{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: dotted;
+}
+#legend3{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#fieldset4{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: dotted;
+}
+#legend4{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#avSpan{
+    color: green;
+}
+#unavSpan{
+    color: red;
+}
+#pwSpan{
+    color: purple;
+}
+#zipSpan{
+    color: red;
+}
+.button{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+    
+#email{
+    width: 160px;
+}
+#zipCode{
+    width: 60px;
+}
+    
+h1{
+        color: black;
+        font-family: 'Carrois Gothic SC', sans-serif;
+    }
+h2{
+        color: black;
+        font-family: 'Nanum Gothic Coding', monospace;
+    }
+h3{
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+h4{
+        color: red;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+h5{
+    color: yellow;
+}
+h6{
+    color: purple;
+}
