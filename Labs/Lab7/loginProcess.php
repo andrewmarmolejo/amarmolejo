@@ -3,7 +3,7 @@
     session_start();
     include '../../dbConnection.php';
     
-    $conn = getDatabaseConnection("heroku_43c1456b693fb28");
+    $conn = getDatabaseConnection("casting");
     $username = $_POST['username'];
     $password = sha1($_POST['password']);
     

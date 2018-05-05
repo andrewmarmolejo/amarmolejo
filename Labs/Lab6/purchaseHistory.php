@@ -19,7 +19,7 @@
     $stmt->execute($np);
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    //print_r($records);
+    
     
     echo "<div id='main2'>";
     if(empty($records)){
@@ -28,6 +28,7 @@
         echo "</h2>";
     }
     else{
+        print_r($records);
         echo "<h2>Product Purchase History & Image</h2>";
         echo "<h3>";
         echo $records[0]['productName'] . "<br>";

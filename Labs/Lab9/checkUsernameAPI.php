@@ -2,8 +2,8 @@
 
     include '../../dbConnection.php';
     
-    $conn = getDatabaseConnection("heroku_43c1456b693fb28");
-    $username = $_GET['username'];
+    $conn = getDatabaseConnection("c9");
+    $username = $_GET['usernames'];
     
     //next query allows for SQL injection because of the single quotes
     //$sql = "SELECT * FROM lab9_user WHERE username = '$username'";

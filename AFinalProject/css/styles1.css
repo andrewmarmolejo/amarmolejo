@@ -1,0 +1,34 @@
+.modal-body{
+    text-align: left;
+}
+
+#modalImg {
+    padding-right: 15px;
+    float: left;
+    width:120px; /* you can use % */
+    height: auto;
+}
+
+#adminImg{
+    width:120px;
+}
+
+
+
+.form-control {
+    margin: 0 auto;
+    width:300px;
+}
+.custom-select {
+    margin: 0 auto;
+    width:300px; 
+}
+
+.input-group {
+    margin: 0 auto;
+    width:300px;
+}
+
+h6, #taken{
+    color: red;
+}
