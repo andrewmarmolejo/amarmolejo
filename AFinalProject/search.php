@@ -32,7 +32,7 @@
                                 <a class="nav-link" href="search.php">Search <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://amarmolejo-amarmolejo.c9users.io/amarmolejo/AFinalProject/admin.php">Admin</a>
+                                <a class="nav-link" href="admin.php">Admin</a>
                             </li>
                         </ul>
                     </div>
