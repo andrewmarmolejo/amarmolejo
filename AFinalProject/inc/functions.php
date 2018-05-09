@@ -1,6 +1,7 @@
 <?php 
-
-    $conn = getDatabaseConnection("casting");
+        //  DB CONNECTION FOR HEROKU USE: heroku_43c1456b693fb28
+    $conn = getDatabaseConnection("heroku_43c1456b693fb28");
+        //  IN search.php, CHECKS IF THE searchForm HAS BEEN SUBMITTED
     if(isset($_GET['searchForm'])) {
         global $conn;
 
@@ -53,6 +54,7 @@
         $stmt->execute($namedParameters);
         $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+        //  IN addActor.php, CHECK IF THE submitProduct HAS BEEN SUBMITTED
     if (isset($_GET['submitProduct'])) {
         $actor_firstname = $_GET['actor_firstname'];
         $actor_lastname = $_GET['actor_lastname'];
@@ -83,6 +85,7 @@
         $statement = $conn->prepare($sql);
         $statement->execute($namedParameters);
     }
+        //  IN updateEntry.php, CHECKS IF THE updateProduct HAS BEEN SUBMITTED
     if (isset($_GET['updateProduct'])) {
         $sql = "UPDATE actor
                 SET actor_firstname = :actor_firstname,
@@ -116,7 +119,7 @@
     }
     
     
-    
+        //  RETURNS THE ACTOR'S INFORMATION TO USE IN updateEntry.php
     function getProductInfo(){
         global $conn;
         $sql = "SELECT * FROM actor WHERE actor_id = " . $_GET['actor_id'];
@@ -127,6 +130,7 @@
         
         return $record;
     }
+        //  RETURNS WITH THE PRE-POPULATED GENDER OF ACTOR TO DISPLAY IN SELECT FORM TO USE IN updateEntry.php
     function displayTheGenders($gender_id){
         global $conn;
         
@@ -141,6 +145,7 @@
             echo " value='".$record["gender_id"] ."'>". $record['gender'] ." </option>";
         }
     }
+        //  RETURNS WITH THE PRE-POPULATED GENRE OF ACTOR TO DISPLAY IN SELECT FORM TO USE IN updateEntry.php
     function displayTheGenres($genre_id){
         global $conn;
         
@@ -155,6 +160,7 @@
             echo " value='".$record["genre_id"] ."'>". $record['genre_name'] ." </option>";
         }
     }
+        //  RETURNS WITH THE PRE-POPULATED AGENCY OF ACTOR TO DISPLAY IN SELECT FORM TO USE IN updateEntry.php
     function getTheAgency($agency_id){
         global $conn;
         
@@ -169,6 +175,7 @@
             echo " value='".$record["agency_id"] ."'>". $record['agency_name'] ." </option>";
         }
     }
+        //  RETURNS THE GENRES TO DISPLAY IN SELECT FORM 
     function displayGenres(){
         global $conn;
         
@@ -181,6 +188,7 @@
             echo "<option value='".$record["genre_id"]."' >" . $record["genre_name"] . "</option>";
         }
     }
+        //  RETURNS THE AGENCIES TO DISPLAY IN SELECT FORM 
     function displayAgencies(){
         global $conn;
         
@@ -193,6 +201,7 @@
             echo "<option value='".$record["agency_id"]."' >" . $record["agency_name"] . "</option>";
         }
     }
+        //  RETURNS THE GENDERS TO DISPLAY IN SELECT FORM 
     function displayGenders(){
         global $conn;
         
@@ -205,6 +214,7 @@
             echo "<option value='".$record["gender_id"]."' >" . $record["gender"] . "</option>";
         }
     }
+        //  DISPLAYS THE MODAL BUTTON & MODAL FOR EACH ACTOR IN search.php
     function modal($count, $itemId){
         global $conn;
         
@@ -261,6 +271,7 @@
             echo "</div>";
         echo "</div>";
     }
+        //  DISPLAYS ALL SEARCH RESULTS IN search.php
     function displayResults() {
         global $items;
         if (isset($items) && empty($items)) {
@@ -270,8 +281,8 @@
             if(isset($items)) {
                     
             echo "<hr>";
-            echo "<h3>Actors Found </h3>"; 
-            echo "<br />";
+            echo "<h1>Actors Found </h1>"; 
+            
             echo "<table class='table' >";
             echo "<tr>";
             echo "<td></td>";
@@ -318,6 +329,7 @@
         }
         }
     }
+        //  DISPLAYS ALL ACTORS IN database.php
     function displayAllProducts(){
         
         global $conn;
@@ -382,7 +394,8 @@
         }
         
     }
-    function displayReports(){                                                                                                                                                                                                                                                          
+        //  DISPLAY REPORTS IN MODAL IN database.php
+    function displayReports(){
         global $conn;
         
         $totalRows = $conn->query('SELECT count(1) FROM actor')->fetchColumn(); 

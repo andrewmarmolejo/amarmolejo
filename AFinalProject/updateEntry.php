@@ -1,7 +1,7 @@
 <?php
     include '../dbConnection.php';
     include 'inc/functions.php';
-    $connection = getDatabaseConnection("casting");
+    $connection = getDatabaseConnection("heroku_43c1456b693fb28");
     if(isset ($_GET['actor_id'])){
         $product = getProductInfo();
     }
@@ -18,35 +18,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-        <script>
-           $(document).ready(function(){
-                $("#lastName").change(function(){
-                    //alert($("#firstName").val() +" "+$("#lastName").val() );
-                    $.ajax({
-                        type: "GET",
-                        url: "checkActorAPI.php",
-                        dataType: "json",
-                        data: { "actor_lastname": $("#lastName").val() },
-                        success: function(data,status) {
-                             //alert(data);
-                             if (!data) {  //data == false
-                                //alert("Username is Available");
-                                $("#taken").html("");
-                             } else {
-                                //alert("Username is ALREADY TAKEN");
-                                 $("#taken").html("<span id='unavSpan'> - Actor already appears in database.</span>"); 
-                             }
-                             
-                        
-                        },
-                        complete: function(data,status) { //optional, used for debugging purposes
-                        //alert(status);
-                        }
-
-                    });//ajax
-                });
-            });
-        </script>
         <style>
             @import url("css/styles1.css");
             form {
@@ -84,7 +55,17 @@
                 </nav>
                 
                 <!--Title & Button-->
-                <h1> Update Actor Information </h1>
+                
+                <?php
+                    if (isset($_GET['updateProduct'])){
+                        echo "<h2>Actor Information Updated</h2>";
+                        echo "<h3>View Changes Below</h3>";
+                    }
+                    else {
+                        echo "<h1> Update Actor Information </h1>";
+                    }
+                ?>
+                <hr>
                 <form method="POST" action="database.php">    
                     <input type="submit" name="returnAdmin" value="Go Back"><br /><br />
                 </form>
@@ -99,7 +80,6 @@
                     <div class="form-group">
                         <!--<label for="validationDefault02">Last Name</label>-->
                         <input type="text" id="lastName" class="form-control" name="actor_lastname" value = "<?=$product['actor_lastname']?>" placeholder="Last name" required>
-                        <span id="taken"></span>
                     </div>
                     <div class="form-group">
                       <label for="validationDefault03">Age</label>

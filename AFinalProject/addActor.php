@@ -2,9 +2,9 @@
     session_start();
     include "../dbConnection.php";
     include "inc/functions.php";
-    $conn = getDatabaseConnection("casting");
+    $conn = getDatabaseConnection("heroku_43c1456b693fb28");
     if(!isset( $_SESSION['adminName'])){
-    header("Location:admin.php");
+        header("Location:admin.php");
     }
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
                     //alert($("#firstName").val() +" "+$("#lastName").val() );
                     $.ajax({
                         type: "GET",
-                        url: "checkActorAPI.php",
+                        url: "api/checkActorAPI.php",
                         dataType: "json",
                         data: { "actor_lastname": $("#lastName").val() },
                         success: function(data,status) {
@@ -80,7 +80,17 @@
                 </nav>
                 
                 <!--Title & Button-->
-                <h1> Add An Entry </h1>
+                <hr>
+                <?php
+                    if (isset($_GET['submitProduct'])){
+                        echo "<h2>Actor Added To Database</h2>";
+                        echo "<h3>Add Another</h3>";
+                    }
+                    else {
+                        echo "<h1> Add An Entry </h1>";
+                    }
+                ?>
+                <hr>
                 <form method="POST" action="database.php">    
                     <input type="submit" name="returnAdmin" value="Go Back"><br /><br />
                 </form>

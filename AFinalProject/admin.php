@@ -60,11 +60,12 @@
                         <br />
                         <input id="submitButton" type="submit" name="searchForm" value="Log In" class="btn btn-primary btn-lg active">
                     </form>
-                </div>    
+                    
+                </div>
+                <?php 
+                    include 'inc/footer.php';
+                ?>
             </div>
-            <?php 
-                include 'inc/footer.php';
-            ?>
         </div>
     </body>
 </html>

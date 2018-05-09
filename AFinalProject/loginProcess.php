@@ -2,7 +2,7 @@
     session_start();
     include '../dbConnection.php';
     
-    $conn = getDatabaseConnection("casting");
+    $conn = getDatabaseConnection("heroku_43c1456b693fb28");
     $username = $_POST['username'];
     $password = sha1($_POST['password']);
     
@@ -81,7 +81,10 @@
                         <br />
                         <input id="submitButton" type="submit" name="searchForm" value="Log In" class="btn btn-primary btn-lg active">
                     </form>
-                </div>    
+                </div>
+                <?php
+                    include 'inc/footer.php';
+                ?>
             </div>
         </div>
     </body>

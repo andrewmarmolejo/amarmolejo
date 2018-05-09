@@ -2,7 +2,7 @@
     session_start();
     include '../dbConnection.php';
     include 'inc/functions.php';
-    $conn = getDatabaseConnection("casting");
+    $conn = getDatabaseConnection("heroku_43c1456b693fb28");
     if(!isset( $_SESSION['adminName'])){
         header("Location:admin.php");
     }
@@ -50,12 +50,13 @@
                 </nav>
                 
                 <!-- Title & Buttons -->
+                <hr>
                 <h1> Admin Database Page </h1>
-                <h2> Welcome <?=$_SESSION['adminName']?>! </h2><br />
-                <div class="btn-group" role="group" aria-label="">
+                <h2> Welcome <?=$_SESSION['adminName']?>! </h2><hr>
+               
                     <a type="button" role="button" class="btn btn-primary btn-lg" href="addActor.php">Add Entry</a>
                     <a type="button" role="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Reports</a>
-                </div>
+                
         
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

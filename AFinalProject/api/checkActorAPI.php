@@ -1,8 +1,8 @@
 <?php
 
-    include '../dbConnection.php';
+    include '../../dbConnection.php';
     
-    $conn = getDatabaseConnection("casting");
+    $conn = getDatabaseConnection("heroku_43c1456b693fb28");
     $actor_firstname = $_GET['actor_firstname'];
     $actor_lastname = $_GET['actor_lastname'];
     

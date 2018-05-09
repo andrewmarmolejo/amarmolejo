@@ -1,7 +1,7 @@
 <?php
 
     include '../dbConnection.php';
-    $connection = getDatabaseConnection("casting");
+    $connection = getDatabaseConnection("heroku_43c1456b693fb28");
     
     $sql = "DELETE FROM actor WHERE actor_id =  " . $_GET['actor_id'];
     $statement = $connection->prepare($sql);
